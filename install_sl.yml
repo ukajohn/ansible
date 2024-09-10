@@ -2,8 +2,8 @@
 - name: Install
   become: true
 
-tasks:
-  - name: Install sl package
-    apt:
-      name: sl
-      state: present
+  tasks:
+    - name: Install sl package
+      apt:
+        name: sl
+        state: present
