@@ -1,0 +1,10 @@
+---
+hosts: all
+
+become: true
+
+tasks:
+  - name: Install sl package
+    apt:
+      name: sl
+      state: present
