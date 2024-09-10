@@ -7,4 +7,4 @@ tasks:
   - name: APT Package Updater
     apt:
       upgrade: yes
-      update_cache: ye
+      update_cache: yes
