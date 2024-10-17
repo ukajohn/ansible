@@ -1,0 +1,10 @@
+# Manage users and keys
+- name: Add users
+  user:
+    name: "{{ item.name }}"
+    comment: "{{ item.comment }}"
+    shell: /bin/bash
+    groups: "{{ item.groups }}"
+    state: "{{ item.state }}"
+    remove: "{{ item.remove }}"
+  loop: "{{ user_details }}"
